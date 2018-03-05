@@ -89,3 +89,34 @@ for (var i=0; i<winnerList.length; i++) {
 };
 
 holderTwoChallenge.innerHTML = "<h3>" + "Challenge 2: " + winContainer.length + "</h3>";
+
+// Challenge #3 Arithmetic
+
+var test2 = {a: 5, b:2, operator: "add"};  //7
+var test2 = {a: 5, b:2, operator: "subtract"}; //3
+var test1 = {a: 5, b:2, operator: "multiply"}; //10
+var test4 = {a: 5, b:2, operator: "divide"}; //2.5
+
+var testOperator = test1.operator;
+
+var holderThreeChallenge = document.getElementById("challenge3");
+
+
+   if (testOperator === "add") {
+    holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a + test1.b) + "</h3>";
+    } else if (testOperator === "subtract") {
+    holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a - test1.b) + "</h3>";   
+    } else if (testOperator === "multiply") {
+    holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a * test1.b) + "</h3>"; 
+    } else {holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a / test1.b) + "</h3>"};
+
+
+    // if (testOperator === "add") {
+    //  console.log(number1.a + number1.b);
+    //  } else if (testOperator === "subtract") {
+    //  console.log(number1.a - number1.b);   
+    //  } else if (testOperator === "multiply") {
+    //  console.log(number1.a * number1.b); 
+    //  } else { console.log(number1.a / number1.b)};
+ 
+
