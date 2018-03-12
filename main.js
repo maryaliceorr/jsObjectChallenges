@@ -102,21 +102,54 @@ var testOperator = test1.operator;
 var holderThreeChallenge = document.getElementById("challenge3");
 
 
-   if (testOperator === "add") {
-    holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a + test1.b) + "</h3>";
-    } else if (testOperator === "subtract") {
-    holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a - test1.b) + "</h3>";   
-    } else if (testOperator === "multiply") {
-    holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a * test1.b) + "</h3>"; 
-    } else {holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a / test1.b) + "</h3>"};
+if (testOperator === "add") {
+holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a + test1.b) + "</h3>";
+} else if (testOperator === "subtract") {
+holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a - test1.b) + "</h3>";   
+} else if (testOperator === "multiply") {
+holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a * test1.b) + "</h3>"; 
+} else {holderThreeChallenge.innerHTML = "<h3>" + "Challenge 3: " + (test1.a / test1.b) + "</h3>"};
 
+//Challenge #4 Ziiiiip!
 
-    // if (testOperator === "add") {
-    //  console.log(number1.a + number1.b);
-    //  } else if (testOperator === "subtract") {
-    //  console.log(number1.a - number1.b);   
-    //  } else if (testOperator === "multiply") {
-    //  console.log(number1.a * number1.b); 
-    //  } else { console.log(number1.a / number1.b)};
+var names = ['fred', 'barney'];
+var ages = [30,40];
+
+var namesAges = [];
+//Output:  { 'fred': 30, 'barney': 40 }
+
+function zipObject (names, ages) {
+    [i,0];
  
+}
 
+console.log(zipObject);
+
+
+//Challenge #5 Strive Matching
+
+var candidate1 = {
+    minSalary: 120000
+  };
+  let job1 = {
+    maxSalary: 140000
+  }
+
+  var candidate2 = {
+    minSalary: 950000
+  };
+  let job2 = {
+    maxSalary: 100000
+  }
+
+  var holderFiveChallenge = document.getElementById("challenge5");
+  //output is false.  this job can hire any minSalary less than $90,000
+  //output is true.  this job can hire any minSalary less than $126,000
+  
+  
+  //output is false.  this job can hire any minSalary less than $90,000
+
+  if (candidate1.minSalary <= (.9 * job1.maxSalary)) {
+      holderFiveChallenge.innerHTML = "<h3>" +  "Challenge 5: " + true + "</h3>";
+  } else { holderFiveChallenge.innerHTML = "<h3>" +  "Challenge 5: " + false + "</h3>";
+};
